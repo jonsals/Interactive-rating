@@ -1,0 +1,172 @@
+/* orange - rgb(255,117,3)
+card - rgb(31,38,48)
+rating - rgb(39,45,55)
+submit - rgb(252,118,19) */
+
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+/* global */
+body {
+  background-color: rgb(20, 21, 25);
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+}
+button:hover {
+  cursor: pointer;
+}
+.title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.center-card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ----- */
+.card-wrapper {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-image: linear-gradient(179deg, rgb(112 154 217 / 14%), rgb(27, 34, 44), rgb(23, 30, 40));
+  width: 25rem;
+  height: 25rem;
+  border-radius: 7%;
+}
+.card-text {
+  margin: 1.4rem;
+  margin-top: 2.4rem;
+}
+
+.card-info {
+  font-size: 0.97em;
+  color: rgb(171, 178, 189);
+}
+
+.star {
+  background-color: hsl(213, 19%, 18%);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fa-star {
+  color: rgb(255, 117, 3);
+}
+
+.rating {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.rate-number {
+  display: flex;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  height: 3.2rem;
+  width: 3.2rem;
+  border-radius: 50%;
+  background-color: rgb(38, 46, 56);
+  border: 0px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.rate-number:hover {
+  background-color: rgb(255, 117, 3);
+}
+.active {
+  border: 0.2rem solid white;
+
+  background-color: rgb(124, 136, 150);
+}
+
+.rating button:first-child {
+  justify-self: start;
+}
+
+.submit {
+  border: 0;
+  border-radius: 42px;
+  background-color: rgb(255, 117, 3);
+  height: 2.8rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+.submit-hover:hover {
+  background-color: rgb(255, 172, 105);
+  text-shadow: 2px 2px black;
+}
+.submit-active {
+  background-color: rgb(255, 255, 255);
+}
+.submit-text {
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.1em;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  margin: auto;
+}
+.submit-text-active {
+  color: rgb(255, 117, 3);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.hidden {
+  display: none;
+}
+
+/* 
+----------------
+survey complete
+---------------- */
+
+.center-image {
+  margin-top: 3rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.center-text {
+  text-align: center;
+}
+
+.response {
+  margin: 2.3rem;
+  text-align: center;
+}
+.response span {
+  padding: 0.4rem 1.2rem;
+  border-radius: 25px;
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(25, 97%, 53%);
+}
+.body-text {
+  color: hsl(216, 12%, 54%);
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    margin: 1.3rem;
+  }
+}
